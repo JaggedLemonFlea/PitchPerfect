@@ -66,7 +66,7 @@
                                 </subviews>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" red="0.0" green="0.55686274509803924" blue="0.50588235294117645" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.023529411764705882" green="0.36470588235294116" blue="0.52156862745098043" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="nCN-Rm-nVJ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="1A3-qG-Gjg"/>
                             <constraint firstItem="KRf-AE-FVS" firstAttribute="centerX" secondItem="nCN-Rm-nVJ" secondAttribute="centerX" id="Geu-Nk-NVX"/>
@@ -173,7 +173,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.0" green="0.55686274509803924" blue="0.50588235294117645" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.031372549019607843" green="0.2627450980392157" blue="0.39215686274509803" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="pFZ-T5-v4x" firstAttribute="centerX" secondItem="pMD-Yu-kDf" secondAttribute="centerX" id="4Ah-8x-CUp"/>
                             <constraint firstItem="pMD-Yu-kDf" firstAttribute="top" secondItem="ANx-uY-2LL" secondAttribute="top" id="NTI-w6-zQn"/>
