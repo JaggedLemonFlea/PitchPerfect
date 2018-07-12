@@ -20,7 +20,7 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        configureRecordingUI(state: false, text: "Tap to Record")
+        configureRecordingUI(state: false)
         // Do any additional setup after loading the view, typically from a nib.
     }
     
@@ -28,16 +28,16 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
         super.viewWillAppear(animated)
     }
     
-    // MARK:  Recording UI Setup Function
-    func configureRecordingUI(state: Bool, text: String){
-        recordingLabel.text = text
+    // MARK:  Recording UI Setup Function takes bool as input to set appropriate states of buttons and text for label
+    func configureRecordingUI(state: Bool){
+        recordingLabel.text = state ? "Recording in Progress" : "Tap to Record"
         stopRecordingButton.isEnabled = state
         recordButton.isEnabled = !state
     }
 
     // MARK: Record Audio
     @IBAction func recordAudio(_ sender: Any) {
-        configureRecordingUI(state: true, text: "Recording in Progress")
+        configureRecordingUI(state: true)
         
         let dirPath = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0] as String
         let recordingName = "recordedVoice.way"
@@ -56,7 +56,7 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
     
     // MARK:  Stop Recording Audio
     @IBAction func stopRecording(_ sender: Any) {
-        configureRecordingUI(state: false, text: "Tap to Record")
+        configureRecordingUI(state: false)
         audioRecorder.stop()
         let audioSession = AVAudioSession.sharedInstance()
         try! audioSession.setActive(false)
